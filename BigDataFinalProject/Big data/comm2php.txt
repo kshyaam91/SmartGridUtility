@@ -1,0 +1,12 @@
+<?php
+//Display Schedule before RPS
+$file = fopen("/home/hduser/tmp/newtimestamp.txt","r");
+while(!feof($file))
+{
+echo fgets($file);
+}
+fclose($file)
+
+//flush();
+
+?>

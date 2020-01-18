@@ -1,0 +1,26 @@
+<?php
+//Edit Appliance
+$lines = file('/home/hduser/tmp/newtimestamp.txt');
+$word0 = $_POST['Name'];
+$len = strlen($word0);
+$word1 = $_POST['Wattage'];
+$word2 = $_POST['StartTime'];
+$word3 = $_POST['EndTime'];
+$word4 = $_POST['RunTime'];
+$word5 = $_POST['Constraint'];
+
+$result = '';
+
+foreach($lines as $line) {
+    if(substr($line, 0, $len) == $word0) {
+        $result .= $word0." ".$word1." ".$word2." ".$word3." ".$word4." ".$word5."\n";
+    } 
+else {
+        $result .= $line;
+    }
+}
+//echo $result;
+
+file_put_contents('/home/hduser/tmp/newtimestamp.txt', $result);
+
+?>

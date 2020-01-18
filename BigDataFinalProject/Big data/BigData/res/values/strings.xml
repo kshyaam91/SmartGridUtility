@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BigDataKruti</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btn1">View Appliance</string>
+    <string name="btn2">Manage Appliance</string>
+    <string name="btn3">View Schedule</string>
+    <string name="title_activity_view_appliance">ViewApplianceActivity</string>
+    <string name="title_activity_manage_appliance">ManageApplianceActivity</string>
+    <string name="title_activity_view_schedule">ViewScheduleActivity</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_home">Home</string>
+    <string name="text1">The Scheduled Appliances are</string>
+    <string name="btn_home1">Home</string>
+    <string name="text2">The Schedule is</string>
+    <string name="btn_rps">RPS</string>
+    <string name="btn_sendtoutility">Send To Utility</string>
+    <string name="btn_home3">Home</string>
+    <string name="utility">Schedule From Utility</string>
+    <string name="title_activity_schedule_from_utility">ScheduleFromUtilityActivity</string>
+    <string name="string">Shedule from Utility</string>
+    <string name="commit">Commit</string>
+    <string name="reschedule">Rechedule</string>
+
+</resources>

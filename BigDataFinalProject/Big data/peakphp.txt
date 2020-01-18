@@ -1,0 +1,17 @@
+<?php
+#!/path/to/php
+
+//$result = exec('java -classpath /home/hduser schedule', $output);
+//echo $result;
+shell_exec('java -classpath /home/hduser peak > /opt/lampp/htdocs/scheduleoutput.txt');
+
+$file = fopen("/opt/lampp/htdocs/scheduleoutput.txt","r");
+while(!feof($file))
+{
+echo fgets($file);
+}
+fclose($file)
+
+//flush();
+
+?>

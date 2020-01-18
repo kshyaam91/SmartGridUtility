@@ -1,0 +1,64 @@
+<?php
+ini_set('max_execution_time', 300);
+
+// Change directory to the input data file folder
+chdir("/home/hduser/tmp/schedule");
+
+
+$outfile = 'scheduleforuser.txt';
+unlink($outfile);
+$hadoopin0=$_POST['zero'];
+$hadoopin1=$_POST['one']."\n";
+$hadoopin2=$_POST['two']."\n";
+$hadoopin3=$_POST['three']."\n";
+$hadoopin4=$_POST['four']."\n";
+$hadoopin5=$_POST['five']."\n";
+$hadoopin6=$_POST['six']."\n";
+$hadoopin7=$_POST['seven']."\n";
+$hadoopin8=$_POST['eight']."\n";
+$hadoopin9=$_POST['nine']."\n";
+$hadoopin10=$_POST['ten']."\n";
+$hadoopin11=$_POST['eleven']."\n";
+$hadoopin12=$_POST['twelve']."\n";
+$hadoopin13=$_POST['thirteen']."\n";
+$hadoopin14=$_POST['fourteen']."\n";
+$hadoopin15=$_POST['fifteen']."\n";
+$hadoopin16=$_POST['sixteen']."\n";
+$hadoopin17=$_POST['seventeen']."\n";
+$hadoopin18=$_POST['eighteen']."\n";
+$hadoopin19=$_POST['nineteen']."\n";
+$hadoopin20=$_POST['twenty']."\n";
+$hadoopin21=$_POST['twentyone']."\n";
+$hadoopin22=$_POST['twentytwo']."\n";
+$hadoopin23=$_POST['twentythree']."\n";
+
+file_put_contents($outfile, "0"." ".$hadoopin0,FILE_APPEND);
+file_put_contents($outfile, "1"." ".$hadoopin1,FILE_APPEND);
+file_put_contents($outfile, "2"." ".$hadoopin2,FILE_APPEND);
+file_put_contents($outfile, "3"." ".$hadoopin3,FILE_APPEND);
+file_put_contents($outfile, "4"." ".$hadoopin4,FILE_APPEND);
+file_put_contents($outfile, "5"." ".$hadoopin5,FILE_APPEND);
+file_put_contents($outfile, "6"." ".$hadoopin6,FILE_APPEND);
+file_put_contents($outfile, "7"." ".$hadoopin7,FILE_APPEND);
+file_put_contents($outfile, "8"." ".$hadoopin8,FILE_APPEND);
+file_put_contents($outfile, "9"." ".$hadoopin9,FILE_APPEND);
+file_put_contents($outfile, "10"." ".$hadoopin10,FILE_APPEND);
+file_put_contents($outfile, "11"." ".$hadoopin11,FILE_APPEND);
+file_put_contents($outfile, "12"." ".$hadoopin12,FILE_APPEND);
+file_put_contents($outfile, "13"." ".$hadoopin13,FILE_APPEND);
+file_put_contents($outfile, "14"." ".$hadoopin14,FILE_APPEND);
+file_put_contents($outfile, "15"." ".$hadoopin15,FILE_APPEND);
+file_put_contents($outfile, "16"." ".$hadoopin16,FILE_APPEND);
+file_put_contents($outfile, "17"." ".$hadoopin17,FILE_APPEND);
+file_put_contents($outfile, "18"." ".$hadoopin18,FILE_APPEND);
+file_put_contents($outfile, "19"." ".$hadoopin19,FILE_APPEND);
+file_put_contents($outfile, "20"." ".$hadoopin20,FILE_APPEND);
+file_put_contents($outfile, "21"." ".$hadoopin21,FILE_APPEND);
+file_put_contents($outfile, "22"." ".$hadoopin22,FILE_APPEND);
+file_put_contents($outfile, "23"." ".$hadoopin23,FILE_APPEND);
+
+
+ob_flush();
+flush();
+
+?>

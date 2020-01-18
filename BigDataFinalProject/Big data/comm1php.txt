@@ -1,0 +1,45 @@
+<?php
+//Add Appliance
+ini_set('max_execution_time', 300);
+
+// Change directory to the input data file folder
+chdir("/home/hduser/tmp");
+
+$infile = 'newtimestamp.txt';
+$outfile = 'hadoop-output.txt';
+
+unlink($outfile);
+
+//$hadoopin=$_POST['input'];
+$hadoopin=$_POST['Name']." ";
+$hadoopin1=$_POST['Wattage']." ";
+$hadoopin2=$_POST['StartTime']." ";
+$hadoopin3=$_POST['EndTime']." ";
+$hadoopin4=$_POST['RunTime']." ";
+$hadoopin5=$_POST['Constraint']." ";
+// Write the necessary contents
+//file_put_contents($infile, "Check for android");
+//file_put_contents($infile, $hadoopin);
+file_put_contents($infile, $hadoopin,FILE_APPEND);
+file_put_contents($infile, $hadoopin1,FILE_APPEND);
+file_put_contents($infile, $hadoopin2,FILE_APPEND);
+file_put_contents($infile, $hadoopin3,FILE_APPEND);
+file_put_contents($infile, $hadoopin4,FILE_APPEND);
+file_put_contents($infile, $hadoopin5,FILE_APPEND);
+file_put_contents($infile, "\n",FILE_APPEND);
+//$intime = filectime($infile);
+
+// Wait for the output file
+
+//while (!file_exists($outfile)) 
+//	{
+//		sleep(2);
+//	}
+
+//sleep(4);
+//echo "Here";
+//echo file_get_contents($outfile);
+ob_flush();
+flush();
+
+?>

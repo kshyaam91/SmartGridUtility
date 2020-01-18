@@ -1,0 +1,17 @@
+<?php
+//Delete Appliance
+//$appname = "washer";
+$appname = $_POST['Name'];
+//echo $appname;
+
+$lines = file("/home/hduser/tmp/newtimestamp.txt", FILE_IGNORE_NEW_LINES);
+$remove = $appname;
+foreach($lines as $key => $line)
+  if(stristr($line, $remove)) unset($lines[$key]);
+
+$data = implode(" \n", array_values($lines))."\n";
+$file = fopen("/home/hduser/tmp/newtimestamp.txt", 'w');
+fwrite($file, $data);
+fclose($file);
+echo($data)
+?>
